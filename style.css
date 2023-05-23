@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 300ms;
+}
+.background {
+    height: 749px;
+    width: 100%;
+    background-image: url(nasa-Q1p7bh3SHj8-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 4px solid white; */
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 11;
+}
+.p {
+    padding: 30px 0px;
+    border-radius: 30px;
+}
+.heading p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.heading .clickMe {
+    width: 100px;
+    height: 40px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bolder;
+    background: white;
+    color: #7028e4;
+}
+.clickMe:hover {
+    transform: scale(1.1);
+    background: #7028e4;
+    color: white;
+    transition: 300ms;
+}
+
+.upcoming {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    z-index: 11;
+}
+.data {
+    display: none;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.502);
+    width: 300px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.data.active {
+    display: block;
+}
+.dataType {
+    color: rgb(170, 255, 181);
+    font-weight: bold;
+    line-height: 30px;
+    padding: 10px 40px;
+}
+.data-val {
+    color: rgb(146, 223, 248);
+    font-weight: normal;
+}
+
+@media screen and (max-width: 290px) {
+    .heading p {
+        font-size: 30px;
+    }
+    .upcoming {
+        margin-bottom: 10px;
+    }
+    .data {
+        width: 250px;
+    }
+    .background {
+        border: none;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.rocket {
+    z-index: 1;
+    position: absolute;
+    left: -200px;
+    top: 50%;
+    opacity: 0.9;
+    /* transform: rotate(35deg); */
+    animation: live 3s;
+    animation-delay: 1s;
+}
+footer {
+    color: white;
+    position: absolute;
+    bottom: 0px;    
+    font-family: 'Poppins', sans-serif;
+}
+@keyframes live {
+    0% {
+        left: -200px;
+        top: 50%;
+    }
+    100% {
+        left: 70%;
+        top: -50%;
+    }
+}
