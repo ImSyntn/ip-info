@@ -107,13 +107,7 @@
     opacity: 0.9;
     /* transform: rotate(35deg); */
     animation: live 3s;
-    animation-delay: 1s;
-}
-footer {
-    color: white;
-    position: absolute;
-    bottom: 0px;    
-    font-family: 'Poppins', sans-serif;
+    animation-delay: 2s;
 }
 @keyframes live {
     0% {
